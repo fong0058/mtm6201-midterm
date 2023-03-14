@@ -47,9 +47,11 @@
             </nav>
         </div>
     </header>
-    <main id="main">
+    <main id="main" class="contact">
         <div>
             <h1>Contact Us</h1>
+        </div>
+        <div class="contact-details">
             <div>
                 <p>Phone: +1 (000) 232-5093</p>
                 <p>Email: services@escape.venture.com</p>
@@ -72,32 +74,39 @@
                     </tbody>
                 </table>
             </div>
-            <p>Or</p>
-            <div class="form">
-                <form action="index.html" method="post">
-                    <fieldset>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email">
-                    </fieldset>
-                    <fieldset>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </fieldset>
-                    <button class="button" type="submit">Send</button>
-                </form>
-            </div>
+        </div>
+        <div class="or">
+            <p>Or...</p>
+        </div>
+        <div>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-text">
+                </fieldset>
+                <fieldset>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email Address" class="form-text">
+                </fieldset>
+                <fieldset>
+                    <label for="title"></label>
+                    <input type="text" name="title" id="title" placeholder="Title" class="form-text">
+                </fieldset>
+                <fieldset>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Message" class="form-text"></textarea>
+                </fieldset>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </div>
         </div>
     </main>
     <footer>
         <div class="margin">
             <div class="footer-link">
                 <ul>
-                    <li><a href=about.html>Company<i class="fa fa-angle-right"></i></a></li>
-                    <li><a href=contact.html>Help & Support<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href=about.html>Company<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    <li><a href=contact.html>Help & Support<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="social-copyright">
@@ -107,7 +116,7 @@
                     <i class="fa fa-envelope"></i>
                     <i class="fas fa-phone"></i>
                 </div>
-                <div>
+                <div class="copyright">
                     <p>Escape Venture&copy;2022</p>
                     <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
                 </div>
