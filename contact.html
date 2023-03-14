@@ -30,31 +30,32 @@
                 <div class="logo">
                     <a href="#"><img src="images/logo-01.svg" alt="Escape Venture Logo"></a>
                 </div>
-                <div class="profile">
-                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                <div class="profile" aria-label="sub navigation">
+                    <a href="#" aria-label="favourites list"><i class="fa fa-heart-o"></i></a>
+                    <a href="#" aria-label="profile"><i class="fa-solid fa-user"></i></a>
                 </div>
             </div>
-            <nav id="nav">
+            <nav id="nav" role="navigation">
                 <ul>
                     <li><a href=index.html>Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href=contact.html>Contact</a></li>
                 </ul>
-                <div class="searchbar">
+                <div class="searchbar" role="search">
                     <button type="submit"><i class="fa fa-search"></i></button><input type="text" placeholder="Search">
                 </div>
             </nav>
         </div>
     </header>
-    <main id="main" class="contact">
+    <main id="main" class="contact" role="main">
         <div>
             <h1>Contact Us</h1>
         </div>
-        <div class="contact-details">
+        <div class="contact-details" itemscope itemtype="https://schema.org/LocalBusiness">
             <div>
-                <p>Phone: +1 (000) 232-5093</p>
-                <p>Email: services@escape.venture.com</p>
+                <h2 itemprop="name">Escape Venture</h2>
+                <p itemprop="telephone">Phone: +1 (000) 232-5093</p>
+                <p itemprop="email">Email: services@escape.venture.com</p>
             </div>
             <div>
                 <table>
@@ -78,7 +79,7 @@
         <div class="or">
             <p>Or...</p>
         </div>
-        <div>
+        <div role="form">
             <form action="index.html" method="post">
                 <fieldset>
                     <label for="name"></label>
@@ -99,9 +100,8 @@
                 <button class="button" type="submit">Send</button>
             </form>
         </div>
-        </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="margin">
             <div class="footer-link">
                 <ul>
@@ -111,10 +111,10 @@
             </div>
             <div class="social-copyright">
                 <div class="social">
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-facebook-official"></i>
-                    <i class="fa fa-envelope"></i>
-                    <i class="fas fa-phone"></i>
+                    <i class="fa fa-instagram" aria-label="instagram"></i>
+                    <i class="fa fa-facebook-official" aria-label="facebook"></i>
+                    <i class="fa fa-envelope" aria-label="email address"></i>
+                    <i class="fas fa-phone" aria-label="phone number"></i>
                 </div>
                 <div class="copyright">
                     <p>Escape Venture&copy;2022</p>
