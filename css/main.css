@@ -451,7 +451,6 @@ q {
 @media only screen and (min-width: 768px) {
     header {
         min-height: 50px;
-
     }
 
     header nav ul {
@@ -466,6 +465,7 @@ q {
 
     #nav {
         display: flex;
+        /* use row-reverse to make the search stay on the left of the icon, to keep the icon stay in the right of nav, which provides consistency*/
         flex-direction: row-reverse;
         float: right;
         align-items: center;
